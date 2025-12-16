@@ -1,0 +1,241 @@
+/* GAYA UMUM */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    color: #007bff; /* Warna Logo */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #007bff;
+}
+
+/* SECTIONS UMUM */
+section {
+    padding: 80px 10%;
+    min-height: 100vh;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* HOME SECTION (Gradient Background) */
+.home {
+    min-height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Efek Gradien dari gambar */
+    background: linear-gradient(to right, #ffffff 50%, #eef5ff 50%); 
+}
+
+.home .text {
+    max-width: 45%;
+    padding-right: 20px;
+}
+
+.home .text h2 {
+    text-align: left;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.home .text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.home .image img {
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.home .btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.home .btn:hover {
+    background-color: #0056b3;
+}
+
+/* ABOUT SECTION (Bagian Bawah) */
+.about {
+    background-color: #0080ff; /* Warna biru gelap */
+    color: #fff;
+    text-align: center;
+    min-height: 50vh; /* Sesuaikan agar lebih pendek dari Home */
+}
+
+.about h2 {
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* SKILL SECTION */
+.skill {
+    padding: 50px 10%;
+    text-align: center;
+    background-color: #eef5ff; /* Matches gradient background */
+}
+
+.skill h2 {
+    margin-bottom: 40px;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+}
+
+.skill-box img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.skill-box p {
+    font-weight: 600;
+    color: #333;
+}
+
+/* PORTFOLIO SECTION */
+.portfolio {
+    padding: 50px 10%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.portfolio h2 {
+    margin-bottom: 40px;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.portfolio-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.portfolio-container img:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    background-color: #327bc4;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* static/style.css */
+
+/* Tambahkan ini di bagian paling atas atau di selector global */
+html {
+    /* Properti ini yang melakukan smooth scrolling */
+    scroll-behavior: smooth; 
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; 
+}
+/* ... kode CSS lainnya ... */
